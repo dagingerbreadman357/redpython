@@ -6,4 +6,8 @@ age = int(input("How old are you today? "))
 #print("is " + str(age) + " years old", end=" ")
 #print("and loves the color " + color + ".", end=" ")
 
+# end= " " puts space at the end of each line
+# sep= " " using this can put space between each operand
+# sep= ", " using this can put commas between each operand
+
 print(name, "is", age, "years old and loves the color", color + ".")
