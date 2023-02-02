@@ -27,4 +27,4 @@ del services[2:4]
 
 # Print new list and length of list
 
-print("The new list of services", services, "with a quantity of", len(services))
+print("The new list of services", services, "with a quantity of", len(services), "services.")
