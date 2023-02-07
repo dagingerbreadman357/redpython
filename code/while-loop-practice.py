@@ -9,6 +9,9 @@
 #  while 1 < 2:
 #      print('something')
 
+# We have a loop with a condition with an iteration that modifies the count variable
+#  once the variable is modified to = 5 the loop should stop
+
 count = 1
 
 while count <= 4:
