@@ -1,20 +1,17 @@
 #!/usr/bin/env python3
 
 # week 13 project
-
 import os
 
-path = "/home/ec2-user/environment/redpython"
 
-files_list = os.listdir(path)
-
-for dir in files_list:
-    if dir == '.git':
-        print(path, dir.append())
-    
-
-#file_size = {'.git': 220, '.gitignore': 1.8, 'hello_keon.py': 31, 'hello_world.py': 33, 'list-script.py': 177, 'random_name_generator.py': 0, 'README.md': 101, 'awsserviceinventory.py': 691, 'code': 334}
-#print(file_size)
-    
+path = os.chdir("/home/ec2-user/environment/redpython/code/")
 
 
+dir_list = list(os.listdir(path))
+
+for path in os.listdir():
+    dict_list = {}                   
+    dict_list['path'] = os.path.realpath(path)
+    file_size = os.stat(path) 
+    dict_list['size'] = file_size.st_size
+    print(dict_list)
