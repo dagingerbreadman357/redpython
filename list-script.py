@@ -3,11 +3,8 @@
 # week 13 project
 import os
 
+path = os.getcwd()
 
-path = os.chdir("/home/ec2-user/environment/redpython/code/")
-
-
-dir_list = list(os.listdir(path))
 
 for path in os.listdir():
     dict_list = {}                   
